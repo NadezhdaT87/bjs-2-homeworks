@@ -5,10 +5,10 @@ function solveEquation(a, b, c) {
     if (d > 0) {
     arr[0] = (-b + Math.sqrt(d) ) / (2 * a);
     arr[1] = (-b - Math.sqrt(d) ) / (2 * a); 
-  }else if (d = 0) {
+  }else if (d === 0) {
     arr[0] = -b / (2 * a);
-  }else if (d < 0) {
-    return arr = [];
+  }else {
+    arr = [];
   }
   return arr;  
 }
